@@ -9,20 +9,20 @@ const SeriesCard = (props) => {
         <img
           src={image_url}
           alt={name}
-          className="w-full h-48 object-cover"
+          className="w-full h-40 object-cover"
         />
         <div className="p-4">
-          <h2 className="text-xl font-semibold mb-2">{name}</h2>
-          <p className="text-gray-700 mb-2">
+          <h2 className="text-xl font-semibold mb-3">{name}</h2>
+          <p className="text-gray-700 mb-3">
             <strong>Rating:</strong> {rating}
           </p>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-3">
             <strong>Description:</strong> {description}
           </p>
-          <p className="text-gray-700 mb-2">
+          <p className="text-gray-700 mb-3">
             <strong>Cast:</strong> {cast.join(", ")}
           </p>
-          <p className="text-gray-700 mb-4">
+          <p className="text-gray-700 mb-3">
             <strong>Genre:</strong> {genre.join(", ")}
           </p>
           <a
