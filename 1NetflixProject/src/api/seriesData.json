@@ -1,0 +1,72 @@
+[
+    {
+      "name": "Lovely Runner",
+      "id": "lovely-runner",
+      "img_url": "https://cdn1-production-images-kly.akamaized.net/9OuCIK1k79c3VLGOFJJ2v7JZBoc=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4794432/original/058128200_1712227287-Copy_of_Lovely_Runner_-_Alt_A_-_Poster_Landscape.jpg",
+      "rating": "9.8",
+      "description": "Im Sol travels back in time to prevent the tragic fate of her favorite star, Ryu Sun Jae.",
+      "cast": ["Kim Hye Yoon", "Byeon Woo Seok", "Song Geon Hee"],
+      "genre": ["Romantic Comedy", "Fantasy"],
+      "watch_url": "https://www.viki.com/tv/40466c-lovely-runner"
+    },
+    {
+      "name": "Stranger Things",
+      "id": "stranger-things",
+      "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0M0nOm5GHoz9vwFo093zwkz5zLFKPwx2e4Q&s",
+      "rating": "8.7",
+      "description": "A group of young friends witness supernatural forces and secret government exploits.",
+      "cast": ["Winona Ryder", "David Harbour", "Millie Bobby Brown"],
+      "genre": ["Drama", "Fantasy", "Horror"],
+      "watch_url": "https://www.netflix.com/title/80057281"
+    },
+    {
+      "name": "The Witcher",
+      "id": "the-witcher",
+      "img_url": "https://static.displate.com/1200x857/displate/2022-06-01/d45c30759431a68846acca42987466e2_c830748a127d5c5c17a9f5ad2c76ada5.jpg",
+      "rating": "8.2",
+      "description": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world.",
+      "cast": ["Henry Cavill", "Anya Chalotra", "Freya Allan"],
+      "genre": ["Action", "Adventure", "Drama"],
+      "watch_url": "https://www.netflix.com/title/80189685"
+    },
+    {
+      "name": "Money Heist",
+      "id": "money-heist",
+      "img_url": "https://blog.mobiusservices.com/wp-content/uploads/2022/05/money-heist-banner.png",
+      "rating": "8.3",
+      "description": "A criminal mastermind who goes by 'The Professor' plans the biggest heist in recorded history.",
+      "cast": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño"],
+      "genre": ["Action", "Crime", "Drama"],
+      "watch_url": "https://www.netflix.com/title/80192098"
+    },
+    {
+      "name": "The Crown",
+      "id": "the-crown",
+      "img_url": "https://rukminim2.flixcart.com/image/850/1000/kksmikw0/poster/r/g/9/large-the-crown-netflix-tv-series-claire-foy-poster-crown-poster-original-imagy225x4nmd2zu.jpeg?q=90&crop=false",
+      "rating": "8.6",
+      "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
+      "cast": ["Claire Foy", "Olivia Colman", "Imelda Staunton"],
+      "genre": ["Biography", "Drama", "History"],
+      "watch_url": "https://www.netflix.com/title/80025678"
+    },
+    {
+      "name": "Squid Game",
+      "id": "squid-game",
+      "img_url": "https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQen_X96pxWwag6W1WMjxR4Sl7dy_RkaLtaZ6MwWvlinT7edT_r6K4L9EyPjsVJa9iy-X6bdi5n1g9nD6NbaGM-S6gM04Lf7mSMqstmZ8MnREs_X2sjcSb514LpT2UOcLIRC7dEwo_R01eqxr0B4IWhZ2g2U.jpg?r=14a",
+      "rating": "8.1",
+      "description": "Hundreds of cash-strapped contestants accept an invitation to compete in children's games for a tempting prize, but the stakes are deadly.",
+      "cast": ["Lee Jung-jae", "Park Hae-soo", "Wi Ha-joon"],
+      "genre": ["Action", "Drama", "Mystery"],
+      "watch_url": "https://www.netflix.com/title/81040344"
+    },
+    {
+      "name": "Queen of Tears",
+      "id": "queen-of-tears",
+      "img_url": "https://www.hindustantimes.com/ht-img/img/2024/05/01/550x309/queen_of_tears_show_1714573336414_1714573367066.jpg",
+      "rating": "TBD",
+      "description": "A gripping tale of love, loss, and resilience set against the backdrop of a war-torn nation.",
+      "cast": ["Kim Soo Hyun", "Kim Ji Won"],
+      "genre": ["Drama", "Romance"],
+      "watch_url": "https://www.viki.com/tv/23456789c-queen-of-tears"
+    }
+  ]
