@@ -1,7 +1,7 @@
 import React from "react";
 
 const SeriesCard = (props) => {
-  const { id, image_url, name, rating, description, cast, genre, watch_url } = props.series;
+  const {image_url, name, rating, description, cast, genre, watch_url } = props.series;
   
   return (
     <>
