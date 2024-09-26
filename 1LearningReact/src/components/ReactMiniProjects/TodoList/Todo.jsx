@@ -27,12 +27,28 @@ const Todo = () => {
     };
     setTodos([...todos, newTodo]);
   };
+  const handleDeleteTodo = (id) => {
+    console.log("anurag");
+
+    const updatedTodos = todos.filter((todo) => todo.id !== id);
+    setTodos(updatedTodos);
+  };
+  const handleCompleteTodo = (id) => {
+    const updatedTodos = todos.map((todo) =>
+      todo.id === id ? { ...todo, completed: true } : todo
+    );
+    setTodos(updatedTodos);
+  };
 
   return (
-    <div className="max-w-md mx-auto mt-10 p-4 border rounded shadow-lg">
+    <div className="max-w-md mx-auto mt-10 p-4 border rounded shadow-lg font-playwrite">
       <h1 className="text-2xl font-bold text-center mb-4">Todo List App</h1>
       <TodoForm handleAddTodo={handleAddTodo} />
-      <TodoContents todos={todos} />
+      <TodoContents
+        todos={todos}
+        handleDeleteTodo={handleDeleteTodo}
+        handleCompleteTodo={handleCompleteTodo}
+      />
     </div>
   );
 };

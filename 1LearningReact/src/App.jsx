@@ -9,6 +9,7 @@ import React from "react";
 // import LiftingSate from "./components/LiftingSateUp/LiftingSate";
 // import ToggleSwitchButton from "./components/ReactMiniProjects/TogglBtn/ToggleSwitchButton ";
 // import SocialMedia from "./components/ReactIcons/SocialMedia";
+import "./index.css";
 import Todo from "./components/ReactMiniProjects/TodoList/Todo";
 const App = () => {
   return (
