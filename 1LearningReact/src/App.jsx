@@ -23,7 +23,7 @@ const App = () => {
       {/* <StateChallenge1/> */}
       {/* <ToggleSwitchButton /> */}
       {/* <SocialMedia/> */}
-      <Todo/>
+      <Todo />
     </div>
   );
 };
