@@ -9,9 +9,10 @@ import React from "react";
 // import LiftingSate from "./components/LiftingSateUp/LiftingSate";
 // import ToggleSwitchButton from "./components/ReactMiniProjects/TogglBtn/ToggleSwitchButton ";
 // import SocialMedia from "./components/ReactIcons/SocialMedia";
-import "./index.css";
-import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
+// import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
 // import { ReactFormHardway } from "./components/ReactForms/ReactFormHardway";
+import "./index.css";
+import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
 const App = () => {
   return (
     <div>
@@ -28,7 +29,8 @@ const App = () => {
       {/* <ShortCircuit/> */}
       {/* <ControlUncontrol/> */}
       {/* <ReactFormHardway/> */}
-      <ReactFormEasyWay/>
+      {/* <ReactFormEasyWay/> */}
+      <ReactLoginForm/>
     </div>
   );
 };
