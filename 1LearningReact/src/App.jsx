@@ -10,7 +10,8 @@ import React from "react";
 // import ToggleSwitchButton from "./components/ReactMiniProjects/TogglBtn/ToggleSwitchButton ";
 // import SocialMedia from "./components/ReactIcons/SocialMedia";
 import "./index.css";
-import Todo from "./components/ReactMiniProjects/TodoList/Todo";
+import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
+// import { ReactFormHardway } from "./components/ReactForms/ReactFormHardway";
 const App = () => {
   return (
     <div>
@@ -23,7 +24,11 @@ const App = () => {
       {/* <StateChallenge1/> */}
       {/* <ToggleSwitchButton /> */}
       {/* <SocialMedia/> */}
-      <Todo />
+      {/* <Todo /> */}
+      {/* <ShortCircuit/> */}
+      {/* <ControlUncontrol/> */}
+      {/* <ReactFormHardway/> */}
+      <ReactFormEasyWay/>
     </div>
   );
 };
