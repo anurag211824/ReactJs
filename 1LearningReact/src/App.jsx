@@ -12,7 +12,10 @@ import React from "react";
 // import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
 // import { ReactFormHardway } from "./components/ReactForms/ReactFormHardway";
 import "./index.css";
-import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
+import UseEffectChallenge from "./components/UseEffectHook/UseEffectChallenge";
+// import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
+// import Useeffect from "./components/UseEffectHook/useeffect";
+// import TimerUsingUseFffect from "./components/UseEffectHook/TimerUsingUseFffect";
 const App = () => {
   return (
     <div>
@@ -30,7 +33,10 @@ const App = () => {
       {/* <ControlUncontrol/> */}
       {/* <ReactFormHardway/> */}
       {/* <ReactFormEasyWay/> */}
-      <ReactLoginForm/>
+      {/* <ReactLoginForm/> */}
+      {/* <Useeffect/> */}
+      {/* <TimerUsingUseFffect/> */}
+      <UseEffectChallenge/>
     </div>
   );
 };
