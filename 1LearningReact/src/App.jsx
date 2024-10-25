@@ -1,4 +1,7 @@
 import React from "react";
+import "./index.css";
+// import PokemonInfo from "./components/FetchApi/PokemonInfo";
+import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
 // import NetflixSeries from "./components/NetflixSeries";
 // import Profile from "./components/Profile";
 // import EventHandling1 from "./components/EventHandling/EventHandling1";
@@ -11,11 +14,12 @@ import React from "react";
 // import SocialMedia from "./components/ReactIcons/SocialMedia";
 // import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
 // import { ReactFormHardway } from "./components/ReactForms/ReactFormHardway";
-import "./index.css";
-import UseEffectChallenge from "./components/UseEffectHook/UseEffectChallenge";
+// import UseEffectChallenge from "./components/UseEffectHook/UseEffectChallenge";
+// import CleanUp from "./components/UseEffectHook/CleanUp";
 // import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
 // import Useeffect from "./components/UseEffectHook/useeffect";
 // import TimerUsingUseFffect from "./components/UseEffectHook/TimerUsingUseFffect";
+// import Fetching from "./components/FetchApi/Fetching";
 const App = () => {
   return (
     <div>
@@ -36,7 +40,11 @@ const App = () => {
       {/* <ReactLoginForm/> */}
       {/* <Useeffect/> */}
       {/* <TimerUsingUseFffect/> */}
-      <UseEffectChallenge/>
+      {/* <UseEffectChallenge/> */}
+      {/* <CleanUp/> */}
+      {/* <Fetching/> */}
+      <PokemonFetchApi/>
+      {/* <PokemonInfo/> */}
     </div>
   );
 };
