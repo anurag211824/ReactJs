@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 // import PokemonInfo from "./components/FetchApi/PokemonInfo";
-import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
+// import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
 // import NetflixSeries from "./components/NetflixSeries";
 // import Profile from "./components/Profile";
 // import EventHandling1 from "./components/EventHandling/EventHandling1";
@@ -19,7 +19,7 @@ import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
 // import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
 // import Useeffect from "./components/UseEffectHook/useeffect";
 // import TimerUsingUseFffect from "./components/UseEffectHook/TimerUsingUseFffect";
-// import Fetching from "./components/FetchApi/Fetching";
+import Fetching from "./components/FetchApi/Fetching";
 const App = () => {
   return (
     <div>
@@ -42,8 +42,8 @@ const App = () => {
       {/* <TimerUsingUseFffect/> */}
       {/* <UseEffectChallenge/> */}
       {/* <CleanUp/> */}
-      {/* <Fetching/> */}
-      <PokemonFetchApi/>
+      <Fetching/>
+      {/* <PokemonFetchApi/> */}
       {/* <PokemonInfo/> */}
     </div>
   );

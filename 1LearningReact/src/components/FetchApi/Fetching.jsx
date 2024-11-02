@@ -10,7 +10,7 @@ useEffect(()=>{
     fetch("https://jsonplaceholder.typicode.com/users")
     .then((res) => res.json())
     .then((data) => setApiData(data))
-    .catch((error) => console.log(error));
+    .catch((error) => console.log(error.message));
 },[])
   return (
     <>

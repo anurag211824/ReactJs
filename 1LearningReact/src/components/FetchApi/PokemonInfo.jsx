@@ -4,23 +4,21 @@ const PokemonInfo = () => {
     const [pokemonList, setPokemonList] = useState([]);
     const [loading, setLoading] = useState(true);
     const API = "https://pokeapi.co/api/v2/pokemon?limit=50"; // Fetch only 50 Pokémon for this example
-
+    const fetchPokemonList = async () => {
+        try {
+            const response = await fetch(API);
+            const data = await response.json();
+            const pokemonDataPromises = data.results.map(pokemon => fetch(pokemon.url).then(res => res.json()));
+            const pokemonData = await Promise.all(pokemonDataPromises);
+            setPokemonList(pokemonData);
+        } catch (error) {
+            console.error("Error fetching Pokémon data:", error);
+        } finally {
+            setLoading(false);
+        }
+    };
     useEffect(() => {
-        const fetchPokemonList = async () => {
-            try {
-                const response = await fetch(API);
-                const data = await response.json();
-                const pokemonDataPromises = data.results.map(pokemon => fetch(pokemon.url).then(res => res.json()));
-                const pokemonData = await Promise.all(pokemonDataPromises);
-                setPokemonList(pokemonData);
-            } catch (error) {
-                console.error("Error fetching Pokémon data:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchPokemonList();
+        fetchPokemonList();  
     }, []);
 
     if (loading) {
