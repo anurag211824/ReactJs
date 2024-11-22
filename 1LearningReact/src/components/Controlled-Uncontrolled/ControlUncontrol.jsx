@@ -41,7 +41,6 @@ const ControlUncontrol = () => {
           </button>
         </form>
       </div>
-
       {/* Controlled Component Section */}
       <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-lg mx-auto mt-6 font-playwrite">
         <h1 className="text-2xl font-semibold mb-4 text-gray-800">Controlled Component</h1>
@@ -67,5 +66,4 @@ const ControlUncontrol = () => {
     </>
   )
 }
-
 export default ControlUncontrol;

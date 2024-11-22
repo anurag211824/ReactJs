@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.css";
+// import UseRef from "./components/UseRefHook/UseRef";
+import Useref1 from "./components/UseRefHook/Useref1";
 // import PokemonInfo from "./components/FetchApi/PokemonInfo";
 // import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
 // import NetflixSeries from "./components/NetflixSeries";
@@ -19,7 +21,8 @@ import "./index.css";
 // import ReactLoginForm from "./components/ReactForms/ReactLoginForm";
 // import Useeffect from "./components/UseEffectHook/useeffect";
 // import TimerUsingUseFffect from "./components/UseEffectHook/TimerUsingUseFffect";
-import Fetching from "./components/FetchApi/Fetching";
+// import Fetching from "./components/FetchApi/Fetching";
+// import ControlUncontrol from "./components/Controlled-Uncontrolled/ControlUncontrol"
 const App = () => {
   return (
     <div>
@@ -34,7 +37,7 @@ const App = () => {
       {/* <SocialMedia/> */}
       {/* <Todo /> */}
       {/* <ShortCircuit/> */}
-      {/* <ControlUncontrol/> */}
+    {/* <ControlUncontrol/> */}
       {/* <ReactFormHardway/> */}
       {/* <ReactFormEasyWay/> */}
       {/* <ReactLoginForm/> */}
@@ -42,9 +45,11 @@ const App = () => {
       {/* <TimerUsingUseFffect/> */}
       {/* <UseEffectChallenge/> */}
       {/* <CleanUp/> */}
-      <Fetching/>
+      {/* <Fetching/> */}
       {/* <PokemonFetchApi/> */}
       {/* <PokemonInfo/> */}
+      {/* <UseRef/> */}
+      <Useref1/>
     </div>
   );
 };
