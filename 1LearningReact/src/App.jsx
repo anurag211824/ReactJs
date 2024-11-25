@@ -1,7 +1,12 @@
 import React from "react";
 import "./index.css";
+import ThemeProvider from "./components/ContextApi/ThemeContext";
+import Header from "./components/ContextApi/Header";
+import MainContent from "./components/ContextApi/MainContent";
+import Footer from "./components/ContextApi/Footer";
 // import UseRef from "./components/UseRefHook/UseRef";
-import Useref1 from "./components/UseRefHook/Useref1";
+// import Useref1 from "./components/UseRefHook/Useref1";
+// import { ParentComponent } from "./components/PropDrilling/ParentComponent";
 // import PokemonInfo from "./components/FetchApi/PokemonInfo";
 // import PokemonFetchApi from "./components/FetchApi/PokemonFetchApi";
 // import NetflixSeries from "./components/NetflixSeries";
@@ -49,7 +54,15 @@ const App = () => {
       {/* <PokemonFetchApi/> */}
       {/* <PokemonInfo/> */}
       {/* <UseRef/> */}
-      <Useref1/>
+      {/* <Useref1/> */}
+      {/* <ParentComponent/> */}
+      {/* <ThemeProvider>
+        <div className="min-h-screen flex flex-col">
+          <Header />
+          <MainContent />
+          <Footer />
+        </div>
+      </ThemeProvider> */}
     </div>
   );
 };
