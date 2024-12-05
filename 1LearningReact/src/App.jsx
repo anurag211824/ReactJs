@@ -56,13 +56,13 @@ const App = () => {
       {/* <UseRef/> */}
       {/* <Useref1/> */}
       {/* <ParentComponent/> */}
-      {/* <ThemeProvider>
+      <ThemeProvider>
         <div className="min-h-screen flex flex-col">
           <Header />
           <MainContent />
           <Footer />
         </div>
-      </ThemeProvider> */}
+      </ThemeProvider>
     </div>
   );
 };

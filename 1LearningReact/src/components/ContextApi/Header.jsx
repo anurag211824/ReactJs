@@ -1,13 +1,15 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
+import React from "react";
+import { useThemeContext } from "./ThemeContext";
 
 const Header = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useThemeContext();
 
   return (
     <header
       className={`p-4 ${
-        theme === "light" ? "bg-gray-100 text-gray-800" : "bg-gray-800 text-gray-100"
+        theme === "light"
+          ? "bg-gray-100 text-gray-800"
+          : "bg-gray-800 text-gray-100"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center">
