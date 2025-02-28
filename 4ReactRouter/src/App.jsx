@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import {
   createBrowserRouter, // To create a router for managing navigation

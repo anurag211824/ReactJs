@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Header from './Header'; // Importing the Header component
 import Footer from './Footer'; // Importing the Footer component
