@@ -1,10 +1,15 @@
+/* eslint-disable no-unused-vars */
+
 import React from "react";
 import "./index.css";
 import ThemeProvider from "./components/ContextApi/ThemeContext";
-import Header from "./components/ContextApi/Header";
-import MainContent from "./components/ContextApi/MainContent";
-import Footer from "./components/ContextApi/Footer";
+// import Header from "./components/ContextApi/Header";
+// import MainContent from "./components/ContextApi/MainContent";
+// import Footer from "./components/ContextApi/Footer";
 // import UseRef from "./components/UseRefHook/UseRef";
+// import ReducerComp from "./components/UseReducerHook/ReducerComp";
+// import ReactMemo from "./components/Memo/ReactMemo";
+import UseMemoParent from "./components/Memo/UseMemoParent";
 // import Useref1 from "./components/UseRefHook/Useref1";
 // import { ParentComponent } from "./components/PropDrilling/ParentComponent";
 // import PokemonInfo from "./components/FetchApi/PokemonInfo";
@@ -42,7 +47,7 @@ const App = () => {
       {/* <SocialMedia/> */}
       {/* <Todo /> */}
       {/* <ShortCircuit/> */}
-    {/* <ControlUncontrol/> */}
+      {/* <ControlUncontrol/> */}
       {/* <ReactFormHardway/> */}
       {/* <ReactFormEasyWay/> */}
       {/* <ReactLoginForm/> */}
@@ -56,12 +61,15 @@ const App = () => {
       {/* <UseRef/> */}
       {/* <Useref1/> */}
       {/* <ParentComponent/> */}
+      {/* <ReducerComp/> */}
+      {/* <ReactMemo/> */}
+      <UseMemoParent/>
       <ThemeProvider>
-        <div className="min-h-screen flex flex-col">
+        {/* <div className="min-h-screen flex flex-col">
           <Header />
           <MainContent />
           <Footer />
-        </div>
+        </div> */}
       </ThemeProvider>
     </div>
   );

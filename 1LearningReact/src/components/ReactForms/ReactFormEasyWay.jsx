@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
 
 const ReactFormEasyWay = () => {
   const [user, setUser] = useState({
@@ -28,7 +29,11 @@ const ReactFormEasyWay = () => {
       mobile: "",
     });
   };
-
+ 
+  useEffect(()=>{
+    console.log(user);
+    
+  },[user])
   return (
     <>
       <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-6">
@@ -113,6 +118,10 @@ const ReactFormEasyWay = () => {
             Submit
           </button>
         </form>
+        <p>
+          {user.firstName}
+          {user.lastName}
+        </p>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useRef } from "react";
 
 const UseRef = () => {
   const email = useRef(null);
@@ -8,6 +9,10 @@ const UseRef = () => {
     console.log(email.current.value);
     console.log(phone.current.value);
   };
+  useEffect(() => {
+    console.log(email.current.value);
+    console.log(phone.current.value);
+  }, [email, phone]);
   return (
     <>
       <div className="bg-teal-100 min-h-screen flex items-center justify-center">
