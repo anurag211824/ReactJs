@@ -1,9 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 // Import NavLink for navigation
 
 const Header = () => {
+  const getNavLinkStyle = ({ isActive }) => {
+    return {
+      color: isActive ? "black" : "yellow",
+    };
+  };
   return (
     <header className="bg-blue-500 text-white p-4">
       <nav className="flex justify-between">
@@ -32,21 +37,18 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/movie"
-              className={({ isActive }) =>
-                isActive ? "text-yellow-300 font-bold" : "text-white"
-              }
+              to="/products"
+              style={({ isActive }) => {
+                return {
+                  color: isActive ? "blue" : "red",
+                };
+              }}
             >
-              Movies
+              Products
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? "text-yellow-300 font-bold" : "text-white"
-              }
-            >
+            <NavLink to="/contact" style={getNavLinkStyle}>
               Contact
             </NavLink>
           </li>

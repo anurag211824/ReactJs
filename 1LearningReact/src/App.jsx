@@ -1,15 +1,19 @@
 /* eslint-disable no-unused-vars */
-
 import React from "react";
 import "./index.css";
-import ThemeProvider from "./components/ContextApi/ThemeContext";
-// import Header from "./components/ContextApi/Header";
-// import MainContent from "./components/ContextApi/MainContent";
-// import Footer from "./components/ContextApi/Footer";
+import ThemeProvider from "./components/ContextApi1/ThemeContext";
+import Headers from "./components/ContextApi1/Headers"
+import MainContent from "./components/ContextApi1/MainContent";
+import Footer from "./components/ContextApi1/Footer";
 // import UseRef from "./components/UseRefHook/UseRef";
 // import ReducerComp from "./components/UseReducerHook/ReducerComp";
 // import ReactMemo from "./components/Memo/ReactMemo";
 import UseMemoParent from "./components/Memo/UseMemoParent";
+import UseReducerForm from "./components/ReactForms/UseReducerForm";
+import ThemeContext from "./components/ContextApi2/ThemeContext";
+import Form from "./components/ContextApi2/Form";
+import Button from "./components/ContextApi2/Button";
+import Panel from "./components/ContextApi2/Panel";
 // import Useref1 from "./components/UseRefHook/Useref1";
 // import { ParentComponent } from "./components/PropDrilling/ParentComponent";
 // import PokemonInfo from "./components/FetchApi/PokemonInfo";
@@ -63,14 +67,20 @@ const App = () => {
       {/* <ParentComponent/> */}
       {/* <ReducerComp/> */}
       {/* <ReactMemo/> */}
-      <UseMemoParent/>
-      <ThemeProvider>
-        {/* <div className="min-h-screen flex flex-col">
-          <Header />
+      {/* <UseMemoParent/> */}
+      {/* <UseReducerForm/> */}
+      {/* <ThemeProvider>
+        <div className="min-h-screen flex flex-col">
+          <Headers />
           <MainContent />
           <Footer />
-        </div> */}
-      </ThemeProvider>
+        </div>
+      </ThemeProvider> */}
+      <ThemeContext>
+        <Form/>
+        <Button/>
+        <Panel/>
+      </ThemeContext>
     </div>
   );
 };

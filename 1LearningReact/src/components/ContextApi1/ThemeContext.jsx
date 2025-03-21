@@ -1,10 +1,11 @@
-import React, { createContext, useState, useContext } from "react";
+/* eslint-disable no-unused-vars */
+import React, { createContext, useState } from "react";
 
 // Create the context
 export const ThemeContext = createContext();
 
 // ThemeProvider component
-const ThemeProvider = ({ children }) => {
+const ThemeProvider = ( {children} ) => {
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -16,15 +17,6 @@ const ThemeProvider = ({ children }) => {
       {children}
     </ThemeContext.Provider>
   );
-};
-
-// Custom hook to use ThemeContext
-export const useThemeContext = () => {
-  const context = useContext(ThemeContext);
-  if (context === undefined) {
-    throw new Error("useThemeContext must be used within a ThemeProvider");
-  }
-  return context;
 };
 
 export default ThemeProvider;

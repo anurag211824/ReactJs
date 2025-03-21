@@ -6,19 +6,21 @@ import {
   RouterProvider, // Provides the router context to the application
 } from "react-router-dom";
 import { Route } from "react-router-dom"; // For defining individual routes
-
 import Home from "./pages/Home"; // Home page component
 import Contact from "./pages/Contact"; // Contact page component
-import Movie from "./pages/Movie"; // Movie page component
+import Movie from "./pages/Product.jsx"; // Movie page component
 import About from "./pages/About"; // About page component
 import AppLayout from "./components/layout/AppLayout"; // App layout component with header, footer, and outlet for nested routes
-
+import ErrorPage from "./pages/ErrorPage";
+import getProductData from "./api/ProductData.jsx";
+import Product from "./pages/Product.jsx";
 const App = () => {
   // Define routes using createBrowserRouter
   const router = createBrowserRouter([
     {
       path: "/", // Base path
       element: <AppLayout />, // Layout component wrapping all nested routes
+      errorElement:<ErrorPage/>,
       children: [
         {
           path: "/", // Home page route
@@ -29,8 +31,9 @@ const App = () => {
           element: <About />,
         },
         {
-          path: "/movie", // Movie page route
-          element: <Movie />,
+          path: "/products", // Movie page route
+          element: <Product />,
+          loader:getProductData
         },
         {
           path: "/contact", // Contact page route

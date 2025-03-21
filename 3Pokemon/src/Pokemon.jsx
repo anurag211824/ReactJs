@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import PokemonCard from "./PokemonCard";
 
@@ -12,6 +13,8 @@ const Pokemon = () => {
     try {
       const res = await fetch(API);
       const data = await res.json();
+      console.log(data);
+      
       const detailedPokemonData = data.results.map(async (pokemon) => {
         const res = await fetch(pokemon.url);
         const data = await res.json();
@@ -54,7 +57,7 @@ if(error){
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <h1 className="text-center text-4xl font-bold text-gray-800 mb-8">
-        Let's Catch Pokémon
+      Catch Pokémon
       </h1>
       <div className="flex justify-center mb-8">
         <input

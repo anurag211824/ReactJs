@@ -2,10 +2,13 @@
 import React from 'react';
 import Header from './Header'; // Importing the Header component
 import Footer from './Footer'; // Importing the Footer component
-import { Outlet } from 'react-router-dom'; // Importing Outlet from react-router-dom to render nested routes
+import { Outlet, useNavigation } from 'react-router-dom'; // Importing Outlet from react-router-dom to render nested routes
 
 // AppLayout component serves as a wrapper layout for the application
 const AppLayout = () => {
+  const navigation =useNavigation()
+  console.log(navigation);
+  
   return (
     <>
       {/* Header component: Displays the header/navigation bar */}
