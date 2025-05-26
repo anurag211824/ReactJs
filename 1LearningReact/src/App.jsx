@@ -37,6 +37,12 @@ import Panel from "./components/ContextApi2/Panel";
 // import TimerUsingUseFffect from "./components/UseEffectHook/TimerUsingUseFffect";
 // import Fetching from "./components/FetchApi/Fetching";
 // import ControlUncontrol from "./components/Controlled-Uncontrolled/ControlUncontrol"
+import ReactFormEasyWay from "./components/ReactForms/ReactFormEasyWay";
+import Todo from "./components/ReactMiniProjects/TodoList/Todo";
+import PokemonInfo from "./components/FetchApi/PokemonInfo";
+import UseRef from "./components/UseRefHook/UseRef";
+import Useref1 from "./components/UseRefHook/Useref1";
+import StateUpdatePractice from "./components/ReactStateUpdates/StateUpdatePractice";
 const App = () => {
   return (
     <div>
@@ -76,11 +82,13 @@ const App = () => {
           <Footer />
         </div>
       </ThemeProvider> */}
-      <ThemeContext>
+      {/* <ThemeContext>
         <Form/>
         <Button/>
         <Panel/>
-      </ThemeContext>
+      </ThemeContext> */}
+
+      <StateUpdatePractice/>
     </div>
   );
 };

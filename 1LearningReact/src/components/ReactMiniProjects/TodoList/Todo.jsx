@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import TodoForm from "./TodoForm";
 import TodoContents from "./TodoContents";
 
 const Todo = () => {
-  const todokey="reactTodo"
+  // const todokey="reactTodo"
   const [todos, setTodos] = useState(() => {
     // Load initial todos from local storage, if any
     const storedTodos = localStorage.getItem("todokey");

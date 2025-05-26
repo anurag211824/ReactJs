@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 
 const TodoForm = ({ handleAddTodo }) => {
   const [task, setTask] = useState("");
@@ -32,5 +32,6 @@ const TodoForm = ({ handleAddTodo }) => {
     </form>
   );
 };
+
 
 export default TodoForm;

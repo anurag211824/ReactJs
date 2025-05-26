@@ -1,5 +1,3 @@
-import React from 'react';
-
 const EventPropagation3 = () => {
   const handleGrandParent = () => {
     console.log("GrandParent clicked");
@@ -28,8 +26,8 @@ const EventPropagation3 = () => {
           <button
             className="c-div bg-red-500 text-white p-4 mt-4 rounded-lg hover:bg-red-600 focus:outline-none shadow-sm"
             onClick={handleChildOnClick}  // Regular onClick handler
-            //onClickCapture={handleChildClick}  // Capture event for propagation
-          >
+            onClickCapture={handleChildClick}  // Capture event for propagation
+>
             Child Div
           </button>
         </div>
